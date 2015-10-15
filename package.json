@@ -1,0 +1,10 @@
+{
+  "name": "natechapmanwebsite",
+  "version": "0.0.0",
+  "description": "natechapmanwebsite",
+  "main": "server.js",
+  "author": {
+    "name": "Nathan",
+    "email": ""
+  }
+}
