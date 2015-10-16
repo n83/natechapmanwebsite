@@ -6,5 +6,14 @@
   "author": {
     "name": "Nathan",
     "email": ""
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "express": "^4.13.3",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-nodemon": "^0.4.0"
   }
 }

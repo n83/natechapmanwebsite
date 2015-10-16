@@ -30,9 +30,32 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="controllers\homeController.js" />
+    <Compile Include="controllers\index.js" />
+    <Compile Include="gruntfile.js" />
     <Compile Include="server.js" />
+    <Content Include=".bowerrc" />
+    <None Include="compilerconfig.json" />
+    <Content Include="compilerconfig.json.defaults">
+      <SubType>Content</SubType>
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </Content>
     <Content Include="package.json" />
+    <Content Include="public\css\site.css" />
+    <Content Include="public\css\site.less" />
+    <Content Include="public\css\site.min.css">
+      <SubType>Content</SubType>
+      <DependentUpon>public\css\site.css</DependentUpon>
+    </Content>
+    <Content Include="public\css\site.min.css" />
+    <Content Include="public\index.html" />
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="controllers\" />
+    <Folder Include="public\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\lib\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
