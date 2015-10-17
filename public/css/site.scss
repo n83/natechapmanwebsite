@@ -1,0 +1,26 @@
+﻿$red: #fb2740;
+
+body {
+  background: #151517;
+  margin: 0;
+  color: #fff;
+}
+
+h3 {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+.siteHeader {
+	margin-bottom: 50px;
+	
+	.logo {
+		font-family: 'Titillium Web', sans-serif;
+		font-size: 1.6em;
+		text-transform: uppercase;
+		line-height: 100px;
+		padding-left: 40px;
+		// color: $red;
+	}
+}
