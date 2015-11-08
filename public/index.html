@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en">
-  <head>
+<html lang="en" ng-app="main">
+<head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,40 +9,53 @@
 
     <title></title>
 
+    <base href="/">
+
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css' />
-    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
 </head>
 
 <body>
 	<div class="siteHeader container-fluid">
-    	<h1 class="logo">Nate Chapman</h1>
+		<ul class="list-inline pull-right m-t m-r">
+			<li><span class="fa fa-facebook"></span>
+			<li><span class="fa fa-twitter"></span>
+			<li><span class="fa fa-linkedin"></span>
+		</ul>
+    	<h1 class="logo pull-left">
+    		Nate Chapman
+    		<!-- <span>Application developer &amp; interface designer</span> -->
+    	</h1>
+    	<ul class="mainNav nav nav-pills pull-left">
+			<li class="nav-item">
+				<a href="#" class="nav-link active">Home</a>
+			</li>
+			<li class="nav-item">
+				<a href="/about" class="nav-link">About</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link disabled">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a href="/contact" class="nav-link">Contact</a>
+			</li>
+		</ul>
     </div>
-    <div class="container">
-    	<div class="row">
-    		<div class="col-sm-4">
-    			<h3>Coding</h3>
-    		</div>
-    		<div class="col-sm-4">
-    			<h3>Software</h3>
-    		</div>
-    		<div class="col-sm-4">
-    			<h3>Personal Skills</h3>
-    		</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4">
-    			<h3>Work Experience</h3>
-    		</div>
-    	</div>
-    	<div class="row">
-			<div class="col-sm-4">
-    			<h3>Passions &amp; Hobbies</h3>
-    		</div>
-    	</div>
+
+    <div ng-view class="container-fluid">
     </div>
+
     <script src="lib/jquery/dist/jquery.min.js"></script>
-    <script src="lib/angular/angular.js"></script>
     <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/Chart.js/Chart.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services/login.js"></script>
+    <script src="js/controllers/home.js"></script>
+    <script src="js/controllers/about.js"></script>
+    <script src="js/controllers/contact.js"></script>
 </body>
 </html>

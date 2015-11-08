@@ -1,26 +1,79 @@
 ﻿$red: #fb2740;
 
 body {
+  // background: #0a0e11 url('../images/bg3.png') no-repeat;
+  background-size: 100%;
+
   background: #151517;
   margin: 0;
   color: #fff;
 }
 
-h3 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 1.2em;
 	text-transform: uppercase;
 }
 
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1em; }
+
 .siteHeader {
 	margin-bottom: 50px;
-	
+
 	.logo {
 		font-family: 'Titillium Web', sans-serif;
-		font-size: 1.6em;
+		font-size: 2em;
 		text-transform: uppercase;
-		line-height: 100px;
-		padding-left: 40px;
+		padding-top: 40px;
+		padding-left: 35px;
 		// color: $red;
+		span {
+			display: block;
+			font-size: .35em;
+			color: $red;
+		}
+	}
+}
+
+.mainNav {
+	margin: 42px 0 0 200px;
+}
+
+.homeHero {
+	min-height: 250px;
+}
+
+.skills {
+	h2 {
+		margin-bottom: 1.5em;
+	}
+
+	h3 {
+		margin-bottom: 1em;
+	}
+
+	.row {
+		margin-bottom: 2.5em;
+	}
+
+	dt {
+		font-weight: normal;
+	}
+
+	dl {
+		font-size: .7em;
+	}
+
+	dd {
+		.fa {
+			color: $red;
+		}
+	}
+}
+
+.hobbies {
+	.fa {
+		font-size: 2em;
 	}
 }

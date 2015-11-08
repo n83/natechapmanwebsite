@@ -13,6 +13,10 @@ app.get('/api/users', function (req, res) {
     res.send({ name: 'Nate', isValid: true, group: 'Admin' });
 });
 
+app.get('*', function (req, res) {
+    res.sendFile(__dirname + '/public/index.html');
+});
+
 var server = http.createServer(app);
 
 server.listen(port);
