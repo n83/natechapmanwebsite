@@ -12,39 +12,42 @@
     <base href="/">
 
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
 </head>
 
 <body>
-	<div class="siteHeader container-fluid">
-		<ul class="list-inline pull-right m-t m-r">
-			<li><span class="fa fa-facebook"></span>
-			<li><span class="fa fa-twitter"></span>
-			<li><span class="fa fa-linkedin"></span>
-		</ul>
-    	<h1 class="logo pull-left">
-    		Nate Chapman
-    		<!-- <span>Application developer &amp; interface designer</span> -->
-    	</h1>
-    	<ul class="mainNav nav nav-pills pull-left">
-			<li class="nav-item">
-				<a href="#" class="nav-link active">Home</a>
-			</li>
-			<li class="nav-item">
-				<a href="/about" class="nav-link">About</a>
-			</li>
-			<li class="nav-item">
-				<a href="#" class="nav-link disabled">Blog</a>
-			</li>
-			<li class="nav-item">
-				<a href="/contact" class="nav-link">Contact</a>
-			</li>
-		</ul>
-    </div>
+	<div class="siteContainer">
+		<div class="siteHeader container-fluid">
+			<!-- <ul class="socialLinkList list-inline pull-right m-t m-r">
+				<li><span class="fa fa-facebook"></span></li>
+				<li><span class="fa fa-twitter"></span></li>
+				<li><span class="fa fa-linkedin"></span></li>
+			</ul> -->
+	    	<h1 class="logo pull-left">
+	    		Nate Chapman
+	    		<!-- <span>Application developer &amp; interface designer</span> -->
+	    	</h1>
+	    	<!-- <ul class="mainNav nav nav-pills pull-left">
+				<li class="nav-item">
+					<a href="#" class="nav-link active">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="/about" class="nav-link">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link disabled">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a href="/contact" class="nav-link">Contact</a>
+				</li>
+			</ul> -->
+	    </div>
 
-    <div ng-view class="container-fluid">
+	    <div ng-view class="container">
+	    </div>
     </div>
 
     <script src="lib/jquery/dist/jquery.min.js"></script>
