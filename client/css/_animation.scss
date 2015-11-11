@@ -1,0 +1,40 @@
+.home {
+	// -webkit-transition:0.5s linear all;
+	// -moz-transition:0.5s linear all;
+	// -o-transition:0.5s linear all;
+	.heroName, .heroHeader, .heroSubheader {
+		transition:0.5s linear all;
+		opacity:1;
+	}
+
+	.heroHeader {
+		transition-delay: 0.2s;
+	}
+
+	.heroSubheader {
+		transition-delay: 0.4s;
+	}
+}
+
+.ng-enter .home {
+	.heroName, .heroHeader, .heroSubheader {
+		opacity:0;
+	}
+}
+
+.ng-leave .home {
+  // -webkit-animation:0.5s my_animation;
+  // -moz-animation:0.5s my_animation;
+  // -o-animation:0.5s my_animation;
+  // animation:0.5s my_animation;
+}
+
+@keyframes my_animation {
+  from { opacity:1; }
+  to { opacity:0; }
+}
+
+// @-webkit-keyframes my_animation {
+//   from { opacity:1; }
+//   to { opacity:0; }
+// }

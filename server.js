@@ -136,32 +136,32 @@ function cleanup(callback) {
     });
 }
 
-getOrCreateDatabase(function(err, db) {
-    if(err) return console.log(err);
-    console.log('Read or created db:\n' + db.id + '\n');
+// getOrCreateDatabase(function(err, db) {
+//     if(err) return console.log(err);
+//     console.log('Read or created db:\n' + db.id + '\n');
 
-    getOrCreateCollection(function(err, coll) {
-        if(err) return console.log(err);
-        console.log('Read or created collection:\n' + coll.id + '\n');
+//     getOrCreateCollection(function(err, coll) {
+//         if(err) return console.log(err);
+//         console.log('Read or created collection:\n' + coll.id + '\n');
 
-        getOrCreateDocument(config.docsDefinitions.Andersen, function(err, doc) {
-            if(err) return console.log(err);
-            console.log('Read or created document:\n' + doc.id + '\n');
+//         getOrCreateDocument(config.docsDefinitions.Andersen, function(err, doc) {
+//             if(err) return console.log(err);
+//             console.log('Read or created document:\n' + doc.id + '\n');
 
-            getOrCreateDocument(config.docsDefinitions.Wakefield, function(err, doc) {
-                if(err) return console.log(err);
-                console.log('Read or created document:\n' + doc.id + '\n');
+//             getOrCreateDocument(config.docsDefinitions.Wakefield, function(err, doc) {
+//                 if(err) return console.log(err);
+//                 console.log('Read or created document:\n' + doc.id + '\n');
 
-                queryCollection("AndersenFamily", function(err, results) {
-                    if(err) return console.log(err);
-                    console.log('Query results:\n' + JSON.stringify(results, null, '\t') + '\n');
+//                 queryCollection("AndersenFamily", function(err, results) {
+//                     if(err) return console.log(err);
+//                     console.log('Query results:\n' + JSON.stringify(results, null, '\t') + '\n');
 
-                    cleanup(function(err) {
-                        if(err) return console.log(err);
-                        console.log('Done.');
-                    });
-                });
-            });
-        });
-    });
-});
+//                     cleanup(function(err) {
+//                         if(err) return console.log(err);
+//                         console.log('Done.');
+//                     });
+//                 });
+//             });
+//         });
+//     });
+// });

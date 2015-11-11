@@ -11,7 +11,7 @@
 		};
 	};
 
-	var module = angular.module('main');
+	var module = angular.module('app');
 	module.factory('loginService', loginService);
 
 }());

@@ -40,8 +40,8 @@ h4 {
 .siteHeader {
   margin-bottom: 50px; }
   .siteHeader .logo {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
     padding-top: 30px;
@@ -58,24 +58,28 @@ h4 {
 
 @media (min-width: 75em) {
   .homeHero {
-    max-width: 45rem; } }
+    max-width: 40rem; } }
 
 .homeHero {
   min-height: 250px; }
   .homeHero .homeHeroContent {
-    margin-top: 9rem !important; }
-  .homeHero .heroHeader, .homeHero .heroSubheader, .homeHero .heroFooter {
-    font-family: 'Open Sans', sans-serif;
-    line-height: normal; }
+    margin-top: 15rem !important; }
+  .homeHero .heroName, .homeHero .heroHeader, .homeHero .heroSubheader, .homeHero .heroFooter {
+    font-family: 'Open Sans', sans-serif; }
+  .homeHero .heroName {
+    font-size: 3.8em;
+    font-weight: bold;
+    line-height: .8em; }
   .homeHero .heroHeader {
-    font-size: 2.5em;
-    font-weight: bold; }
+    font-size: 2.1em;
+    font-weight: bold;
+    line-height: .8em;
+    color: #fb2740; }
   .homeHero .heroSubheader {
-    color: #fb2740;
-    font-size: 1.2em; }
-  .homeHero .heroFooter {
-    color: #656565;
-    font-size: .9em; }
+    color: #707070;
+    font-size: 1.1em;
+    line-height: normal;
+    margin-top: .2em; }
 
 .skills h2 {
   margin-bottom: 1.5em; }
@@ -98,4 +102,23 @@ h4 {
 .hobbies .fa {
   font-size: 2em; }
 
-/*# sourceMappingURL=site.css.map */
+.home .heroName, .home .heroHeader, .home .heroSubheader {
+  transition: 0.5s linear all;
+  opacity: 1; }
+
+.home .heroHeader {
+  transition-delay: 0.2s; }
+
+.home .heroSubheader {
+  transition-delay: 0.4s; }
+
+.ng-enter .home .heroName, .ng-enter .home .heroHeader, .ng-enter .home .heroSubheader {
+  opacity: 0; }
+
+@keyframes my_animation {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+/*# sourceMappingURL=natechapmanwebsite.css.map */

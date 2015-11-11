@@ -1,6 +1,6 @@
 (function() {
 
-	var app = angular.module('main');
+	var app = angular.module('app');
 
 	var homeController = function($scope, loginService) {
 		//loginService.login();
