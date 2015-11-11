@@ -28,17 +28,17 @@
 	var app = angular.module('app');
 
 	var aboutController = function($scope) {
-
+		$scope.pageClass = 'about';
 	};
 
-	app.controller('about', aboutController);
+	app.controller('about', ['$scope', aboutController]);
 }());
 (function() {
 
 	var app = angular.module('app');
 
 	var contactController = function($scope) {
-
+		$scope.pageClass = 'contact';
 	};
 
 	app.controller('contact', contactController);
@@ -49,7 +49,7 @@
 
 	var homeController = function($scope, loginService) {
 		//loginService.login();
-		$scope.message = 'Works!';
+		$scope.pageClass = 'home';
 
 		// var data = {
 		//     labels: ["Client-Side", "Server-Side", "Database", "Design"],
@@ -89,7 +89,17 @@
 		// var myDoughnutChart = new Chart(ctx2).Doughnut(data2, { segmentShowStroke : false, percentageInnerCutout : 95 });
 	};
 
-	app.controller('home', ['loginService', homeController]);
+	app.controller('home', ['$scope', 'loginService', homeController]);
+}());
+(function() {
+
+	var app = angular.module('app');
+
+	var siteController = function($scope, loginService) {
+		$scope.pageClass = 'home';
+	};
+
+	app.controller('site', ['loginService', siteController]);
 }());
 (function() {
 

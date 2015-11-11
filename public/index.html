@@ -19,7 +19,7 @@
 </head>
 
 <body>
-	<div ng-class="{backgroundFade: true}" class="siteContainer">
+	<div class="siteContainer">
 		<div class="siteHeader container-fluid">
 			<!-- <ul class="socialLinkList list-inline pull-right m-t m-r">
 				<li><span class="fa fa-facebook"></span></li>
@@ -46,8 +46,7 @@
 			</ul> -->
 	    </div>
 
-	    <div ng-view class="pageView container">
-	    </div>
+	    <div ng-view ng-cloak class="page container {{pageClass}}"></div>
     </div>
 
     <script src="lib/jquery/dist/jquery.min.js"></script>

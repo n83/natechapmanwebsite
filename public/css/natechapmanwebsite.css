@@ -102,23 +102,48 @@ h4 {
 .hobbies .fa {
   font-size: 2em; }
 
-.home .heroName, .home .heroHeader, .home .heroSubheader {
-  transition: 0.5s linear all;
-  opacity: 1; }
-
-.home .heroHeader {
-  transition-delay: 0.2s; }
-
-.home .heroSubheader {
-  transition-delay: 0.4s; }
-
-.ng-enter .home .heroName, .ng-enter .home .heroHeader, .ng-enter .home .heroSubheader {
+.page ~ .page {
   opacity: 0; }
 
-@keyframes my_animation {
-  from {
+.page ~ .home {
+  transition-delay: 0.9s; }
+
+.about, .contact {
+  transition: 0.2s linear all; }
+  .about .pageTitle, .contact .pageTitle {
+    transition: 0.2s linear all; }
+  .about.ng-enter .pageTitle, .contact.ng-enter .pageTitle {
+    opacity: 0; }
+  .about.ng-enter.ng-enter-active .pageTitle, .contact.ng-enter.ng-enter-active .pageTitle {
     opacity: 1; }
-  to {
-    opacity: 0; } }
+  .about.ng-leave .pageTitle, .contact.ng-leave .pageTitle {
+    opacity: 1; }
+  .about.ng-leave.ng-leave-active .pageTitle, .contact.ng-leave.ng-leave-active .pageTitle {
+    opacity: 0; }
+
+.home {
+  transition: 0.9s linear all; }
+  .home .heroName, .home .heroHeader, .home .heroSubheader, .home .homeMenu, .home .socialLinkList {
+    transition: 0.3s linear all; }
+  .home .heroHeader {
+    transition-delay: 0.15s; }
+  .home .heroSubheader {
+    transition-delay: 0.3s; }
+  .home .homeMenu {
+    transition-delay: 0.45s; }
+  .home .socialLinkList {
+    transition-delay: 0.6s; }
+
+.home.ng-enter .heroName, .home.ng-enter .heroHeader, .home.ng-enter .heroSubheader, .home.ng-enter .homeMenu, .home.ng-enter .socialLinkList {
+  opacity: 0; }
+
+.home.ng-enter.ng-enter-active .heroName, .home.ng-enter.ng-enter-active .heroHeader, .home.ng-enter.ng-enter-active .heroSubheader, .home.ng-enter.ng-enter-active .homeMenu, .home.ng-enter.ng-enter-active .socialLinkList {
+  opacity: 1; }
+
+.home.ng-leave .heroName, .home.ng-leave .heroHeader, .home.ng-leave .heroSubheader, .home.ng-leave .homeMenu, .home.ng-leave .socialLinkList {
+  opacity: 1; }
+
+.home.ng-leave.ng-leave-active .heroName, .home.ng-leave.ng-leave-active .heroHeader, .home.ng-leave.ng-leave-active .heroSubheader, .home.ng-leave.ng-leave-active .homeMenu, .home.ng-leave.ng-leave-active .socialLinkList {
+  opacity: 0; }
 
 /*# sourceMappingURL=natechapmanwebsite.css.map */

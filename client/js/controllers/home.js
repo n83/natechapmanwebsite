@@ -4,7 +4,7 @@
 
 	var homeController = function($scope, loginService) {
 		//loginService.login();
-		$scope.message = 'Works!';
+		$scope.pageClass = 'home';
 
 		// var data = {
 		//     labels: ["Client-Side", "Server-Side", "Database", "Design"],
@@ -44,5 +44,5 @@
 		// var myDoughnutChart = new Chart(ctx2).Doughnut(data2, { segmentShowStroke : false, percentageInnerCutout : 95 });
 	};
 
-	app.controller('home', ['loginService', homeController]);
+	app.controller('home', ['$scope', 'loginService', homeController]);
 }());
